@@ -1,0 +1,10 @@
+<div class="DeleteContent">
+    <img src="assets/images/delete-icon-transparent-background-4.jpg">
+    <h1 mat-dialog-title>Delete planet</h1>
+    <p>Are you sure that you want to delete: <span>{{data.planetName}}</span> </p>
+</div>
+
+<div class="deleteFooter">
+    <button mat-raised-button color="primary" (click)="deleteSelectedPlanet()">Yes</button>
+    <button mat-button mat-dialog-close>No</button>
+</div>

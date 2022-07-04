@@ -1,0 +1,41 @@
+
+
+  .cardHeader{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      margin-bottom: 0;
+    }
+
+  }
+
+  .cardContent{
+    text-align: justify;
+
+
+    p{
+      padding: 15px;
+    }
+  }
+
+  .cardInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .cardInfoChild{
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .infoName > p{
+        color: rgb(172, 170, 170);
+      }
+    }
+  }
+
+

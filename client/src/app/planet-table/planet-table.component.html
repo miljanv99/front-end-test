@@ -1,0 +1,43 @@
+<table mat-table [dataSource]="planetList" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef  > ID </th>
+        <td mat-cell *matCellDef="let planet" [routerLink]="['planet/',planet.id]" > {{planet.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="planetName">
+        <th mat-header-cell *matHeaderCellDef> Planet Name </th>
+        <td mat-cell *matCellDef="let planet" [routerLink]="['planet/',planet.id]"  > {{planet.planetName}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="planetColor">
+        <th mat-header-cell *matHeaderCellDef> Planet Color </th>
+        <td mat-cell *matCellDef="let planet" [routerLink]="['planet/',planet.id]" > {{planet.planetColor}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="planetRadiusKM">
+        <th mat-header-cell *matHeaderCellDef> Planet Radius KM </th>
+        <td mat-cell *matCellDef="let planet" [routerLink]="['planet/',planet.id]" > {{planet.planetRadiusKM}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="distInMillionsKM.fromSun">
+        <th mat-header-cell *matHeaderCellDef> Dist In Millions KM From Sun </th>
+        <td mat-cell *matCellDef="let planet" [routerLink]="['planet/',planet.id]"> {{planet.distInMillionsKM.fromSun}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="distInMillionsKM.fromEarth">
+        <th mat-header-cell *matHeaderCellDef> Dist In Millions KM From Earth </th>
+        <td mat-cell *matCellDef="let planet" [routerLink]="['planet/',planet.id]" > {{planet.distInMillionsKM.fromEarth}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

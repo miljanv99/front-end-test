@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+div.mat-tab-label-content{
+    img{
+        width: 25px;
+    }
+}
+
+.mat-tab-header{
+    width: 350px;
+    top: -70px;
+    left: 351px;
+}
+
+.mat-form-field-wrapper{
+    margin-top: 15px;
+}
+
+.example-full-width{
+    width: 350px;
+}
+
+.mat-tab-group{
+    width: 100%;
+    background-color: rgb(236,239,244);
+}
+
+mat-tab{
+
+}
+
+
+table{
+    width: 100%;
+    padding: 10px;
+
+    td{
+        width: 215px;
+    }
+
+}
+
+.headerWrapper{
+    min-width: 905px;
+}
+.tabs{
+    min-width: 905px;
+}
+
+@media screen and  (max-width: 1259px) {
+    .mat-tab-header {
+        left: 192px;
+    }
+
+}
+@media screen and  (max-width: 1570px) {
+    .basicInfoWrapper {
+        flex-direction: column;
+
+        .leftPart, .rightPart{
+            width: 100% !important;
+
+        }
+
+        .leftPart {
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightPart .description{
+            width: 100% !important;
+        }
+        .rightPart .title, .rightPart .description{
+            text-align: center;
+        }
+
+
+    }
+
+
+}
+
+
+//div[role= tab]{
+    //justify-content: unset;
+//}
+
+

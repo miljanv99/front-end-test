@@ -1,0 +1,57 @@
+<h1 mat-dialog-title>Edit planet</h1>
+
+<div class="browsePhoto">
+    <p>Photo</p>
+    <button mat-raised-button color="primary">Browse...</button>
+</div>
+
+<form #formPlanet="ngForm"  class="example-form" >
+
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="data.planetName"  name="planetName" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="data.description"   name="description" required></textarea>
+    </mat-form-field>
+
+    <div class="detailData">
+        <div class="data">
+            <mat-form-field appearance="fill">
+                <mat-label>Radius in km</mat-label>
+                <input matInput [(ngModel)]="data.planetRadiusKM"   name="planetRadiusKM" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Color</mat-label>
+                <input matInput [(ngModel)]="data.planetColor"   name="planetColor"  required>
+            </mat-form-field>
+        </div>
+
+        <div class="data">
+            <mat-form-field appearance="fill">
+                <mat-label>Dist. from Sun</mat-label>
+                <input matInput [(ngModel)]="PlanetDistSun"  name="fromSun"  required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Dist from Earth</mat-label>
+                <input matInput [(ngModel)]="PlanetDistEarth"  name="fromEarth"  required>
+            </mat-form-field>
+
+        </div>
+    </div>
+
+    <div class="dialogFooter">
+        <button mat-raised-button (click)="openPopup('0ms', '0ms')">Confirm</button>
+        <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+
+</form>
+
+
+
+
+

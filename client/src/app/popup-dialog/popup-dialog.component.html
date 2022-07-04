@@ -1,0 +1,10 @@
+<div class="popUpContent">
+    <img src="../../assets/images/Exclamation-Mark-PNG-Clipart-Background.png">
+    <h1 mat-dialog-title>Edit planet</h1>
+    <p>Are you sure that you want to edit: <span>{{data.planetName}}</span> </p>
+</div>
+
+<div class="popUpFooter">
+    <button mat-raised-button color="primary" type="submit" (click)="editPlanet()">Confirm</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+</div>

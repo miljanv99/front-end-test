@@ -1,0 +1,43 @@
+<div [routerLink]="['planet/',planetInput.id]"  class="card" >
+
+    <div class="cardHeader">
+        <img style="width: 150px;" src='{{planetInput.imageUrl}}' alt="">
+        <h1>{{planetInput.planetName}}</h1>
+    </div>
+
+    <div class="cardContent">
+        <p>{{planetInput.description}}</p>
+    </div>
+
+    <div class="cardInfo">
+        <div class="cardInfoChild">
+            <div class="infoName">
+                <h3>{{planetInput.planetColor}}</h3>
+                <p>Color</p>
+            </div>
+
+            <div class="infoName">
+                <h3>{{planetInput.planetRadiusKM}}</h3>
+                <p>Radius in km</p>
+
+            </div>
+
+        </div>
+
+        <div class="cardInfoChild">
+            <div class="infoName">
+                <h3>{{planetInput.distInMillionsKM.fromSun}}</h3>
+                <p>Dist. from Sun</p>
+            </div>
+            <div class="infoName">
+                <h3>{{planetInput.distInMillionsKM.fromEarth}}</h3>
+                <p>Dist. from Earth</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

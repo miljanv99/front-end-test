@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.headerWrapper{
+  width: 100%;
+  height: 100px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  h1{
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-left: 30px;
+  }
+  .editDeleteWrapper{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+
+    button{
+      width: 120px;
+      height: 40px;
+    }
+    button:first-child{
+      background-color: rgb(18,81,105);
+      color: white;
+    }
+    button:last-child{
+      background-color: rgb(1,31,73);
+      color:white;
+    }
+  }
+}
+
+
+.singlePlanetContentWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 239, 244);
+  padding: 30px;
+
+}
+
+
+.basicInfoWrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+
+  .leftPart{
+    width: 40%;
+
+
+    img{
+      width: 250px;
+      height: 250px;
+      margin-left: 20px;
+    }
+  }
+  .rightPart{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+
+    h1{
+      font-size: xxx-large;
+      font-weight: bold;
+    }
+
+    .description{
+      width: 80%;
+      p{
+        padding: 10px;
+      }
+    }
+
+  }
+
+}
+
+.radiusColor{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .radius, .color{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+
+  }
+  .radius p:first-child, .color p:first-child{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .radius p:last-child, .color p:last-child{
+    color: #bbbbbb;
+  }
+}
+
+
+.distance{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .distanceSun, .distanceEarth{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+
+  }
+  .distanceSun p:first-child, .distanceEarth p:first-child{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .distanceSun p:last-child, .distanceEarth p:last-child{
+    color: #bbbbbb;
+  }
+}
+
+
+/*Grid layout*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 45% 30% 20% ;
+  grid-column-gap: 20px;
+  padding: 10px;
+
+  .grid-item{
+    background-color: white;
+
+  }
+
+  .nested{
+    display: grid;
+    grid-row-gap: 20px;
+
+    div{
+      background-color: white;
+    }
+
+  }
+}
+
+
+.singlePlanetContentWrapper{
+  min-width: 905px;
+}
+
+
+
+
+
+

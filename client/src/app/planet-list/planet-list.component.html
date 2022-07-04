@@ -1,0 +1,41 @@
+<div class="headerWrapper" xmlns:filter="http://www.w3.org/1999/xhtml">
+    <h1>Planets</h1>
+
+    <div class="view-search-create">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label name="searchLabel">Search</mat-label>
+            <input type="text" for="searchLabel" matInput [(ngModel)]="filterString">
+          </mat-form-field>
+
+        
+
+        <button mat-raised-button color="primary" (click)="openDialogCreate()">Create</button>
+         
+
+    </div>
+
+</div>
+
+<div class="tabs">
+    <mat-tab-group mat-align-tabs="center">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <img src="../../assets/images/grid_view_FILL0_wght400_GRAD0_opsz48.png" alt="">  
+        </ng-template>
+        <div class="Wrapper">
+            <div class="wrapperCard" *ngFor="let planet of planetList | filter: filterString"  >
+                <app-planet-card [planetInput]="planet"  ></app-planet-card>
+            </div>
+        </div>
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <img src="../../assets/images/table_view_FILL0_wght400_GRAD0_opsz48.png" alt="">  
+        </ng-template>
+            <app-planet-table></app-planet-table>
+      </mat-tab>
+    </mat-tab-group>
+</div>
+

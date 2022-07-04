@@ -1,0 +1,60 @@
+<div class="headerWrapper">
+    <h1>{{PlanetName}}</h1>
+    <div class="editDeleteWrapper">
+        <button mat-raised-button color="primary" (click)="openDialogEdit()">Edit</button>
+        <button mat-raised-button color="primary" (click)="openDialogDelete()">Delete</button>
+    </div>
+</div>
+
+<div class="singlePlanetContentWrapper">
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <div class="basicInfoWrapper">
+
+                <div class="leftPart">
+                    <img src="{{PlanetImg}}">
+                </div>
+                <div class="rightPart">
+                    <div class="title">
+                        <h1>{{PlanetName}}</h1>
+                    </div>
+                    <div class="description">
+                        <p>{{PlanetDescription}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="nested">
+            <div class="radiusColor">
+                <div class="radius">
+                    <p>{{PlanetRadius}}</p>
+                    <p>Radius in km</p>
+                </div>
+            </div>
+            <div class="radiusColor">
+                <div class="color">
+                    <p>{{PlanetColor}}</p>
+                    <p>Color</p>
+                </div>
+            </div>
+        </div>
+        <div class="nested">
+            <div class="distance">
+                <div class="distanceSun">
+                    <p>{{PlanetDistSun}}</p>
+                    <p>Dist. from Sun</p>
+                </div>
+            </div>
+
+            <div class="distance">
+                <div class="distanceEarth">
+                    <p>{{PlanetDistEarth}}</p>
+                    <p>Dist. from Earth</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
